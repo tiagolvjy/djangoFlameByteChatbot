@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Registrar - FlameByte{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center">Registrar</h2>
+    <form method="POST" class="mt-4">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
+{% endblock %}

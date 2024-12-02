@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage - FlameByte{% endblock %}
+
+{% block content %}
+    <h1 class="display-4 text-center">Bem-vindo à FlameByte!</h1>
+    <p class="lead text-center">A sua loja de eletrônicos favorita!</p>
+    <div class="text-center mb-4">
+        <a href="{% url 'products_list' %}" class="btn btn-primary btn-lg">Ver Produtos</a>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Anúncios</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://img.odcdn.com.br/wp-content/uploads/2024/02/Crunchyroll-logo-e-mascote-via-Crunchyroll-divulgacao.jpg" class="card-img-top" alt="Anúncio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Anúncio 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor nulla at neque porta imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque et ex dolor.</p>
+                        <a href="https://www.crunchyroll.com/pt-br" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://img.odcdn.com.br/wp-content/uploads/2024/04/imagem_2024-04-30_172325065.png" class="card-img-top" alt="Anúncio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Anúncio 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor nulla at neque porta imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque et ex dolor.</p>
+                        <a href="https://www.leagueoflegends.com/pt-br/" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://i.ytimg.com/vi/xutfON8aODg/maxresdefault.jpg" class="card-img-top" alt="Anúncio 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Anúncio 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor nulla at neque porta imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque et ex dolor.</p>
+                        <a href="https://newcp.net/pt" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJLw8W0fCn_rDwQVNsxSXtBAZcKGtM9xu6w&s" class="card-img-top" alt="Anúncio 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Anúncio 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor nulla at neque porta imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque et ex dolor.</p>
+                        <a href="https://www.neopets.com" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

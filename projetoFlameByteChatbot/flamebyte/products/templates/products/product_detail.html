@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.title }} - FlameByte{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="display-4">{{ product.title }}</h1>
+    <img src="{{ product.image }}" alt="{{ product.title }}" class="product-image img-fluid">
+    <p class="lead">Preço: R$ {{ product.price }}</p>
+    
+    <a href="https://youtu.be/dQw4w9WgXcQ" class="btn btn-primary btn-lg" target="_blank">Comprar</a>
+    
+    <a href="{% url 'products_list' %}" class="btn btn-secondary">Voltar para Produtos</a>
+</div>
+{% endblock %}
